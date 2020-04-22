@@ -1,5 +1,6 @@
 ---
   order: 1
+  title: Making the Grade
 ---
 
 ![Making the Grade](../../assets/img/Layout.jpg)
