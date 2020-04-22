@@ -2,7 +2,7 @@
 
 This work began in the hopes of creating a process to enable designers to build better levels that combine a game's mechanics and narrative smoothly. After designing and building multiple levels without a formal process, it became clear that there must be a better way to construct the framework of a level before building begins. We decided the best plan was to generate our own process and attempt to formalize as much of it as possible.
 
-[![SIGGRAPH poster preview](/img/pace.png)](/img/pace_full.png)
+[![SIGGRAPH poster preview](../img/pace.png)](../img/pace_full.png)
 
 One of the most significant tools that we generated as a part of this process is the Pace Digraph. What this graph illustrates is a series of nodes that will compose a level of a game. Each logical node is one chunk of a level where something of significance can happen. Each one of these nodes can be illustrated by using our Gameplay Situations construct.
 
