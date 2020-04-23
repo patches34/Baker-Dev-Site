@@ -4,7 +4,7 @@ layout: page
 
 
 <div class="portfolio-list">
-  {% assign sorted = site.portfolio | sort: 'order' %}
+  {% assign sorted = site.projects | where: "portfolio", "true" %}
   {% assign items = sorted | reverse %}
   {% for portfolio_item in items %}
   <article class="post-preview">
