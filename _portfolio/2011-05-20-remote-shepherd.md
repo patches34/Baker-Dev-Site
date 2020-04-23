@@ -1,5 +1,6 @@
 ---
   order: 7
+  preview: assets/img/rs_shot.png
 ---
 
 <iframe class="center-block" width="560" height="315" src="https://www.youtube.com/embed/BILZfwTul-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

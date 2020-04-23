@@ -2,19 +2,26 @@
 layout: page
 ---
 
-<div class="posts-list">
+
+<div class="portfolio-list">
   {% assign sorted = site.portfolio | sort: 'order' %}
   {% assign items = sorted | reverse %}
   {% for portfolio_item in items %}
   <article class="post-preview">
     <a href="{{ portfolio_item.url | relative_url }}">
-	  <h2 class="post-title">{{ portfolio_item.title }}</h2>
+      {% if portfolio_item.preview %}
+      <img src="{{ portfolio_item.preview | relative_url }}" alt="preview">
+      {% endif %}
 
-	  {% if portfolio_item.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ portfolio_item.subtitle }}
-	  </h3>
-	  {% endif %}
+      <h2 class="post-title">{{ portfolio_item.title }}</h2>
+
+      {% if portfolio_item.subtitle %}
+      <h3 class="post-subtitle">
+        {{ portfolio_item.subtitle }}
+      </h3>
+      {% endif %}
+
+
     </a>
 
     <p class="post-meta">
@@ -29,11 +36,11 @@ layout: page
       <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
       {% endfor %}
       {% else %}
-        {{ portfolio_item.tags | join: ", " }}
+      {{ portfolio_item.tags | join: ", " }}
       {% endif %}
     </div>
     {% endif %}
 
-   </article>
+  </article>
   {% endfor %}
 </div>
