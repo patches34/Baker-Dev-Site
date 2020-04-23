@@ -9,7 +9,11 @@ layout: base
 <div class="container" role="main">
   <div class="row">
     <div class="portfolio-list">
-      {% assign sorted = site.projects | where: "portfolio", "true" %}
+      {% if page.search_field %}
+      {% assign sorted = site.projects | where: page.search_field, page.search_value %}
+      {% else %}
+      {% assign sorted = site.projects %}
+      {% endif %}
       {% assign items = sorted | reverse %}
       {% for portfolio_item in items %}
       <article class="portfolio-preview">
@@ -17,9 +21,16 @@ layout: base
           {% if portfolio_item.preview %}
           <img src="{{ portfolio_item.preview | relative_url }}" alt="preview">
           {% endif %}
+          {% if portfolio_item.use_title %}
+          <h2 class="post-title">{{ portfolio_item.title }}</h2>
+          {% endif %}
         </a>
       </article>
       {% endfor %}
     </div>
   </div>
 </div>
+
+{% if page.search_field %}
+<a href="#">View All</a>
+{% endif %}

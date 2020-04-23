@@ -824,4 +824,5 @@ iframe {
 .portfolio-list img {
   border-radius: 0.5em;
   height: 156px;
+  width: 250px;
 }

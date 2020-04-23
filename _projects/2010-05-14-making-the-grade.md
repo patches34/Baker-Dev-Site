@@ -1,5 +1,6 @@
 ---
   title: Making the Grade
+  preview: assets/img/grade_title.png
 ---
 
 ![Making the Grade](../../assets/img/Layout.jpg)
