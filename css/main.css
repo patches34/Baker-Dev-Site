@@ -826,3 +826,9 @@ iframe {
   height: 156px;
   width: 250px;
 }
+
+.projects-list {
+  display: grid;
+  grid-gap: 1em;
+  justify-content: left;
+}
