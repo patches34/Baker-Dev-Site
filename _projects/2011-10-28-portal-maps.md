@@ -1,5 +1,5 @@
 ---
-  
+  use_title: true
 ---
 
 <iframe class="center-block" width="560" height="315" src="https://www.youtube.com/embed/nBW96Eqythk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

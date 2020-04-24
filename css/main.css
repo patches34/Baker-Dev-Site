@@ -824,4 +824,11 @@ iframe {
 .portfolio-list img {
   border-radius: 0.5em;
   height: 156px;
+  width: 250px;
+}
+
+.projects-list {
+  display: grid;
+  grid-gap: 1em;
+  justify-content: left;
 }

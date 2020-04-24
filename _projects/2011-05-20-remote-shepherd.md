@@ -1,6 +1,7 @@
 ---
   preview: assets/img/rs_shot.png
   portfolio: true
+  tagline: Your city is dying. Protect her at all costs.
 ---
 
 <iframe class="center-block" width="560" height="315" src="https://www.youtube.com/embed/BILZfwTul-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

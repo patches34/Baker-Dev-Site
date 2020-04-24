@@ -1,25 +1,22 @@
 ---
-layout: base
+layout: default
 ---
 
-<header class="intro-header">
-  <img src="{{ 'assets/img/logo-header.png' | relative_url }}" alt="">
-</header>
+<img src="{{ 'assets/img/logo-header.png' | relative_url }}" alt="">
 
-<div class="container" role="main">
-  <div class="row">
-    <div class="portfolio-list">
-      {% assign sorted = site.projects | where: "portfolio", "true" %}
-      {% assign items = sorted | reverse %}
-      {% for portfolio_item in items %}
-      <article class="portfolio-preview">
-        <a href="{{ portfolio_item.url | relative_url }}">
-          {% if portfolio_item.preview %}
-          <img src="{{ portfolio_item.preview | relative_url }}" alt="preview">
-          {% endif %}
-        </a>
-      </article>
-      {% endfor %}
-    </div>
+<div class="row">
+  <div class="portfolio-list">
+    {% assign sorted = site.projects | where: page.search_field, page.search_value %}
+    {% assign items = sorted | reverse %}
+    {% for portfolio_item in items %}
+    <article class="portfolio-preview">
+      <a href="{{ portfolio_item.url | relative_url }}">{% if portfolio_item.preview %}
+        <img src="{{ portfolio_item.preview | relative_url }}" alt="preview">
+        {% endif %}
+      </a>
+    </article>
+    {% endfor %}
   </div>
 </div>
+
+<!-- <a href="{{ 'projects' | relative_url }}">View All</a> -->

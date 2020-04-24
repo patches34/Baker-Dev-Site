@@ -1,5 +1,6 @@
 ---
 layout: portfolio
 title: Portfolio
-subtitle: Awesome things I have done
+search_field: portfolio
+search_value: true
 ---
